@@ -1,67 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="908dp"
-    android:layout_height="100dp">
-
-    <!--Breadcrumb header-->
-    <LinearLayout
-        android:id="@+id/breadcrumb_layout"
-        android:orientation="horizontal"
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:paddingBottom="24dp"
-        android:paddingTop="24dp">
-
-        <!--Breadcrumb for Channel Lineup-->
-        <TextView
-            android:id="@+id/channel_lineup_breadcrumb"
-            android:layout_width="wrap_content"
-            android:layout_height="fill_parent"
-            android:layout_marginLeft="35dp"
-            android:clickable="true"
-            android:text="WHY DOESNT THIS WORK"/>
-
-        <!--Arrow divider-->
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="fill_parent"
-            android:layout_marginLeft="6dp"
-            android:layout_marginRight="6dp"
-            android:text=">"/>
-
-        <!--Headend name-->
-        <TextView
-            android:id="@+id/headend_title"
-            android:layout_width="wrap_content"
-            android:layout_height="fill_parent"
-            android:layout_marginRight="35dp"
-            android:singleLine="true"
-            android:ellipsize="end"
-            android:layout_centerVertical="true"/>
-    </LinearLayout>
-
-    <!-- List of search results -->
-    <ListView
-        android:id="@+id/channel_list"
-        android:layout_width="fill_parent"
-        android:layout_height="440dp"
-        android:layout_below="@id/breadcrumb_layout"
-        android:divider="@null"
-        android:focusable="false"
-        android:clickable="false"/>
-
-    <!--Save button-->
-    <LinearLayout
-        android:orientation="horizontal"
-        android:layout_width="fill_parent"
-        android:layout_alignParentBottom="true"
-        android:layout_height="60dp"
-        android:gravity="center">
-
+<!--
+TODO
+Not sure why, but android seems to constrain this view to a particular size if it's used within a DialogFragment AND
+the outer layout is a RelativeLayout.  If I wrap the RelativeLayout in a FrameLayout or LinearLayout (using wrap_content)
+then this doesn't happen.  Need to figure out why this is.
+-->
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+    <RelativeLayout
+        android:layout_height="300dp"
+        android:layout_width="1000dp"
+        android:background="@android:color/white">
         <Button
             android:id="@+id/dismiss_button"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Press it"/>
-    </LinearLayout>
- </RelativeLayout>
+    </RelativeLayout>
+</FrameLayout>
