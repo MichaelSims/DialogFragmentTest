@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="908dp"
+    android:layout_height="100dp">
+
+    <!--Breadcrumb header-->
+    <LinearLayout
+        android:id="@+id/breadcrumb_layout"
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="24dp"
+        android:paddingTop="24dp">
+
+        <!--Breadcrumb for Channel Lineup-->
+        <TextView
+            android:id="@+id/channel_lineup_breadcrumb"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="35dp"
+            android:clickable="true"
+            android:text="WHY DOESNT THIS WORK"/>
+
+        <!--Arrow divider-->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="6dp"
+            android:layout_marginRight="6dp"
+            android:text=">"/>
+
+        <!--Headend name-->
+        <TextView
+            android:id="@+id/headend_title"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_marginRight="35dp"
+            android:singleLine="true"
+            android:ellipsize="end"
+            android:layout_centerVertical="true"/>
+    </LinearLayout>
+
+    <!-- List of search results -->
+    <ListView
+        android:id="@+id/channel_list"
+        android:layout_width="fill_parent"
+        android:layout_height="440dp"
+        android:layout_below="@id/breadcrumb_layout"
+        android:divider="@null"
+        android:focusable="false"
+        android:clickable="false"/>
+
+    <!--Save button-->
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_height="60dp"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/dismiss_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Press it"/>
+    </LinearLayout>
+ </RelativeLayout>

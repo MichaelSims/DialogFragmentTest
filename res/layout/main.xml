@@ -9,5 +9,11 @@
         android:layout_height="wrap_content"
         android:text="Hello World, DialogFragmentActivity"
         />
+    <Button
+        android:id="@+id/theButton"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:text="Press it"
+        />
 </LinearLayout>
 
