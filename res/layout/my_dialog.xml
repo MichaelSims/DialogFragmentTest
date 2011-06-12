@@ -11,11 +11,14 @@ then this doesn't happen.  Need to figure out why this is.
     <RelativeLayout
         android:layout_height="300dp"
         android:layout_width="1000dp"
+        android:layout_gravity="center"
         android:background="@android:color/white">
         <Button
             android:id="@+id/dismiss_button"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true"
             android:text="Press it"/>
     </RelativeLayout>
 </FrameLayout>

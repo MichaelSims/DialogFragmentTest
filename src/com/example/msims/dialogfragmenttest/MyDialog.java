@@ -22,6 +22,7 @@ public class MyDialog extends DialogFragment {
     public void onCreate(Bundle savedInstanceState) {
         Log.d("Flubber", "onCreate");
         super.onCreate(savedInstanceState);
+        setStyle(DialogFragment.STYLE_NO_FRAME, 0);
     }
 
     @Override
