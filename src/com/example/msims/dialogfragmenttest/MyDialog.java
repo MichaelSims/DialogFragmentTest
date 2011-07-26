@@ -13,9 +13,19 @@ public class MyDialog extends DialogFragment {
 
     /*
      * Order of initialization:
+     * onAttach()
      * onCreate()
      * onCreateDialog()
      * onCreateView()
+     * onActivityCreated()
+     * onStart()
+     * onResume()
+     * onCancel()
+     * onPause()
+     * onStop()
+     * onDestroyView()
+     * onDestroy()
+     * onDetach()
      */
 
     @Override
